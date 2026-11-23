@@ -18,7 +18,7 @@ endfps = 0
 startfps = 0
 
 def training():
-    a = pd.read_csv("blinkFatigue.csv")
+    a = pd.read_csv("blinkFatigue")
     features = np.array(a['BPM']).reshape((len(a['BPM']), -1))
     labels = a['FATIGUE']
     clf = tree.DecisionTreeClassifier()
